@@ -1,12 +1,12 @@
 # todo-list-app
 Audit a todo application
 
-[[Images/myapp.png]]
+[[/wiki/Images/myapp.png]]
 
 
 ## Description: 
-This a simple todo application made with MVC model.
-Local storage is used to save todos in your browser
+This a simple todo application made with MVC model. U+000D
+Local storage is used to save todos in your browser.
 
 
 ## Table of Contents: 
