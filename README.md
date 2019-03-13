@@ -11,6 +11,10 @@ Local storage is used to save todos in your browser.
 
 ## Table of Contents: 
 Optionally, include a table of contents in order to allow other people to quickly navigate especially long or detailed READMEs.
+## Prerequisites
+
+node
+npm
 
 ## Installation: 
 Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
@@ -18,12 +22,31 @@ Installation is the next section in an effective README. Tell other users how to
 + this text is highlighted in green
 - this text is highlighted in red
 ```
+On a terminal :
+```
+cd todo-list-app
+npm install
+```
+Now dependencies will be installed.
+You can open the ...index.html... file on your browser.
+
+To run tests :
+```
+cd todo-list-app
+npm install jasmine
+cd test
+```
+You can open the ...index.html... file on your browser.
+
 
 ## Usage: 
 The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
 
 ## Contributing: 
 Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for setting guidelines for repository contributors.
+
+
+
 
 ## Credits: 
 
