@@ -5,12 +5,11 @@ Audit a todo application
 
 
 ## Description: 
-This a simple todo application made with MVC model. U+000D
+This a simple todo application made with MVC model. 
+
 Local storage is used to save todos in your browser.
 
 
-## Table of Contents: 
-Optionally, include a table of contents in order to allow other people to quickly navigate especially long or detailed READMEs.
 ## Prerequisites
 
 node
