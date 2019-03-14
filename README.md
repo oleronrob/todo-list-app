@@ -13,6 +13,7 @@ Local storage is used to save todos in your browser.
 ## Prerequisites
 
 node
+
 npm
 
 ## Installation: 
