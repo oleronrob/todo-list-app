@@ -1,8 +1,7 @@
 # todo-list-app
 Audit a todo application
 
-[[https://raw.githubusercontent.com/wiki/oleronrob/todo-list-app/Images/myapp.PNG]]
-![bbb](https://raw.githubusercontent.com/wiki/oleronrob/todo-list-app/Images/myapp.PNG)
+![todo-app](https://raw.githubusercontent.com/wiki/oleronrob/todo-list-app/Images/myapp.PNG)
 
 ## Description: 
 This a simple todo application made with MVC model. 
