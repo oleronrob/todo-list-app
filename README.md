@@ -1,7 +1,7 @@
 # todo-list-app
 Audit a todo application
 
-[[/wiki/Images/myapp.PNG]]
+[[https://github.com/oleronrob/todo-list-app.wiki/Images/myapp.PNG]]
 
 
 ## Description: 
