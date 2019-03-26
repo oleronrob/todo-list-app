@@ -60,15 +60,7 @@ describe('controller', function() {
     it('should show entries on start-up', function() {
         // TODO: write test
 
-        var todos = [{
-                title: "todo one",
-                completed: true
-            },
-            {
-                title: "todo two",
-                completed: false
-            }
-        ];
+        var todos = [];
 
         setUpModel(todos);
         subject.setView('');
@@ -104,29 +96,23 @@ describe('controller', function() {
 
         it('should show active entries', function() {
             // TODO: write test
-            var todo = {
-                completed: false
-            };
-            setUpModel([todo]);
+            var todo = {title: 'my todo', completed: false};
+			setUpModel([todo]);
 
-            subject.setView('#/active');
+			subject.setView('#/active');
 
-            expect(view.render).toHaveBeenCalledWith('showEntries', [{
-                completed: false
-            }]);
+			expect(model.read).toHaveBeenCalledWith({completed: false}, jasmine.any(Function));
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
         });
         it('should show completed entries', function() {
             // TODO: write test
-            var todo = {
-                completed: true
-            };
-            setUpModel([todo]);
+            var todo = {title: 'my todo', completed: true};
+			setUpModel([todo]);
 
-            subject.setView('#/completed');
+			subject.setView('#/completed');
 
-            expect(view.render).toHaveBeenCalledWith('showEntries', [{
-                completed: true
-            }]);
+			expect(model.read).toHaveBeenCalledWith({completed: true}, jasmine.any(Function));
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
         });
 
 
@@ -203,7 +189,11 @@ describe('controller', function() {
             // TODO: write test
             var todo = [{
                 id: 1,
-                title: 'my todo',
+                title: 'my todo1',
+                completed: false
+            },{
+                id: 2,
+                title: 'my todo2',
                 completed: false
             }];
 
@@ -216,6 +206,9 @@ describe('controller', function() {
                 completed: false
             }, jasmine.any(Function));
             expect(model.update).toHaveBeenCalledWith(1, {
+                completed: true
+            }, jasmine.any(Function));
+            expect(model.update).toHaveBeenCalledWith(2, {
                 completed: true
             }, jasmine.any(Function));
         });
@@ -250,8 +243,6 @@ describe('controller', function() {
 
             subject.setView('');
 
-            view.render.calls.reset();
-            model.create.calls.reset();
             let title = 'my new todo';
 
             view.trigger('newTodo', title);
@@ -298,7 +289,7 @@ describe('controller', function() {
         it('should remove an entry from the model', function() {
             // TODO: write test
             var todo = {
-                id: 42,
+                id: 1,
                 title: 'my todo',
                 completed: true
             };
@@ -306,10 +297,10 @@ describe('controller', function() {
 
             subject.setView('');
             view.trigger('itemRemove', {
-                id: 42
+                id: 1
             });
 
-            expect(model.remove).toHaveBeenCalledWith(42, jasmine.any(Function));
+            expect(model.remove).toHaveBeenCalledWith(1, jasmine.any(Function));
         });
 
     });
