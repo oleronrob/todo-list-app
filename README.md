@@ -45,7 +45,6 @@ No Contributors needed. This is just an exercice.
 
 Copyright (c) Addy Osmani, Sindre Sorhus, Pascal Hartig, Stephen Sawchuk.
 
-Sources project origin : [Git repo](https://github.com/tastejs/todomvc)
 
 ## License: 
 
